@@ -4,11 +4,12 @@ import { pathToFileURL, writeTempFile } from './_file.js'
 import { getScreenshot } from './_browser.js'
 
 const {
-  OG_HTML_DEBUG = false
+  NOW_REGION = false,
+  HTML_DEBUG = false
 } = process.env
 
-const isDev = true
-const isHtmlDebug = OG_HTML_DEBUG
+const isDev = !NOW_REGION
+const isHtmlDebug = HTML_DEBUG
 
 export default async (req, res) => {
   try {

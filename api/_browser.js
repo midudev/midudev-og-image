@@ -9,11 +9,9 @@ let _page
  * @returns {Promise<import("puppeteer-core").Page>}
  */
 async function getPage (isDev) {
-  console.log(isDev)
   if (_page) { return _page }
   const options = await getOptions(isDev)
   const browser = await puppeteer.launch(options)
-  console.log(browser)
   _page = await browser.newPage()
   return _page
 }
