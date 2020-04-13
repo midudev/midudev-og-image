@@ -1,0 +1,39 @@
+{
+  "name": "midudev-og-image",
+  "version": "1.0.0",
+  "description": "Service to create on the fly the og-image for midudev blog",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev:server": "nodemon ./dev/server/index.js",
+    "dev:client": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/midudev/midudev-og-image.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/midudev/midudev-og-image/issues"
+  },
+  "homepage": "https://github.com/midudev/midudev-og-image#readme",
+  "dependencies": {
+    "chrome-aws-lambda": "2.1.1",
+    "puppeteer-core": "2.1.1",
+    "twemoji": "12.1.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3",
+    "polka": "0.5.2",
+    "prettier-standard": "16.2.1",
+    "standard": "14.3.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ]
+  }
+}
